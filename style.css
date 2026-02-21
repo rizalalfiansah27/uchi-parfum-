@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+    margin: 0;
+    background: hsla(240, 22%, 5%, 0.326);
+    color: #fff;
+}
+
+/* App */
+.app {
+    max-width: 420px;
+    margin: auto;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1c1c1c, #121212);
+}
+.app {
+    max-width: 420px;
+    margin: auto;
+    min-height: 100vh;
+    background: url("images/bg1\ \(1\).jpeg") center / cover no-repeat;
+}
+
+/* Header */
+.app-header {
+    padding: 24px 24px;
+    background: linear-gradient(140deg, #0d0150, #ffdb64db);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-left img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.app-header p {
+    margin: 2px 0 0;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Content */
+.app-content {
+    padding: 20px;
+}
+
+
+/* Card */
+.card {
+    background: #6e6868d7;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 15px rgba(22, 22, 50, 0.701);
+    overflow: hidden;
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.card-header img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.card-info span {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.arrow {
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+/* Card Body */
+.card-body {
+    display: none;
+    padding: 0 14px 14px 90px;
+    font-size: 13px;
+    line-height: 1.6;
+    animation: slide 0.3s ease;
+}
+
+@keyframes slide {
+    from {opacity: 0; transform: translateY(-5px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 15px 20px;
+    padding: 12px 14px;
+
+    background: #d2cfcfb8;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 12px rgba(214, 214, 214, 0.311);
+}
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+.app-content {
+    height: 100vh;
+}
